@@ -20,7 +20,7 @@ RUN git clone  https://github.com/Pallav-Reactiveworks/wordpress.git
 
 WORKDIR /var/www/wordpress/
 
-RUN  cp -r wordpress/* /html/
+ADD wordpress/* /html/
 
 
 EXPOSE 80
