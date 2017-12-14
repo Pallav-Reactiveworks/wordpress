@@ -18,9 +18,9 @@ WORKDIR /var/www/
 
 RUN git clone  https://github.com/Pallav-Reactiveworks/wordpress.git
 
-WORKDIR /var/www/wordpress/
+WORKDIR /var/www
 
-RUN cp -r wordpress/* /html/
+RUN cp -r wordpress/wordpress/* html
 
 
 EXPOSE 80
