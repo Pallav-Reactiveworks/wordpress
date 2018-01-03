@@ -1,5 +1,5 @@
 
-FROM ubuntu:17.07
+FROM ubuntu:latest
 
 MAINTAINER ladekarpallav
 
