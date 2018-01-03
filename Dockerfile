@@ -1,5 +1,5 @@
 
-FROM ubuntu:latest
+FROM ubuntu:14.04
 
 MAINTAINER ladekarpallav
 
@@ -7,10 +7,7 @@ RUN apt-get upgrade -y
 
 RUN apt-get update
 
-
-RUN apt-get install apache2 apache2-utils -y  && apt-get install php7.0 php7.0-mysql libapache2-mod-php7.0 php7.0-cli php7.0-cgi php7.0-gd -y  && apt-get install mysql-client -y
-
-
+RUN apt-get -y update && apt-get -y upgrade && apt-get install -y apache2 php5 libapache2-mod-php5 php5-mcrypt libapache2-mod-auth-mysql php5-mysql mysql-client -y
 
 WORKDIR /home/ubuntu/
 
