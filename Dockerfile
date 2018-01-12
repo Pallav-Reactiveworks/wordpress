@@ -26,7 +26,3 @@ EXPOSE 80
 
 ENTRYPOINT service apache2 start && sleep 3600
 
-
-
-
-
